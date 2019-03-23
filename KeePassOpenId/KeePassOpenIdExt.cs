@@ -253,7 +253,7 @@ namespace KeePassOpenId
 
 		private void OnTbOpenId_Leave(object sender, EventArgs e)
 		{
-			OpenIdProvider provider = providers.Where(p => p.Name == ((TextBox)sender).Text).SingleOrDefault();
+			OpenIdProvider provider = providers.Where(p => p.Name.Equals(((TextBox)sender).Text, StringComparison.InvariantCultureIgnoreCase)).SingleOrDefault();
 
 			SetProviderReferences(provider);
 		}
@@ -283,7 +283,7 @@ namespace KeePassOpenId
 					{
 						Location = new Point(6, 40),
 						Size = new Size(61, 13),
-						Text = "OpenId",
+						Text = "OpenId Provider",
 					};
 
 					TextBox tbOpenId = new TextBox()
@@ -303,7 +303,7 @@ namespace KeePassOpenId
 					if (pefEntryForm.EditModeEx == PwEditMode.EditExistingEntry)
 					{
 						tbOpenId.Text = pefEntryForm.EntryRef.CustomData.Get("OpenIdProvider");
-						provider = providers.Where(p => p.Name == tbOpenId.Text).SingleOrDefault();
+						provider = providers.Where(p => p.Name.Equals(tbOpenId.Text, StringComparison.InvariantCultureIgnoreCase)).SingleOrDefault();
 					}
 					Control[] tabEntryArray = pefEntryForm.Controls.Find("m_tabEntry", true);
 
