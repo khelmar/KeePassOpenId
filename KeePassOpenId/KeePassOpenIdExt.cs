@@ -55,7 +55,7 @@ namespace KeePassOpenId
 			mfMainForm.FileOpened += MainForm_FileOpened;
 
 			//menu tool strip
-			ToolStripMenuItem tsmiMenuToolStripEdit = (ToolStripMenuItem)mfMainForm.MainMenu.Items["m_menuEdit"];
+			ToolStripMenuItem tsmiMenuToolStripEdit = (ToolStripMenuItem)mfMainForm.MainMenu.Items["m_menuEntry"];
 
 			//tool strip
 			CustomToolStripEx tsmiToolStripEdit = (CustomToolStripEx)mfMainForm.Controls["m_toolMain"];
@@ -217,7 +217,7 @@ namespace KeePassOpenId
 
 		private void OnEntryAdd(object sender, EventArgs e)
 		{
-			ToolStripMenuItem tsmiEdit = (ToolStripMenuItem)mfMainForm.MainMenu.Items["m_menuEdit"];
+			ToolStripMenuItem tsmiEdit = (ToolStripMenuItem)mfMainForm.MainMenu.Items["m_menuEntry"];
 			foreach (var item in tsmiEdit.DropDownItems)
 			{
 				if (item is ToolStripMenuItem)

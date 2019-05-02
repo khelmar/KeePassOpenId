@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\KeePass-2.41-Source\Build\KeePass\Debug\plugins\</OutputPath>
+    <OutputPath>..\..\..\KeePass-2.42-Source\Build\KeePass\Debug\plugins\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -36,9 +36,9 @@
     </CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="KeePass, Version=2.41.0.31743, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="KeePass, Version=2.42.0.38535, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\KeePass-2.41\KeePass.exe</HintPath>
+      <HintPath>..\KeePass.exe</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
