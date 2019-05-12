@@ -29,6 +29,14 @@ namespace KeePassOpenId
 
 		#region overrides
 
+		public override string UpdateUrl
+		{
+			get
+			{
+				return @"https://raw.githubusercontent.com/khelmar/KeePassOpenId/master/KeePassOpenId.version";
+			}
+		}
+
 		public override ToolStripMenuItem GetMenuItem(PluginMenuType t)
 		{
 			// Provide a menu item for the main location(s)
